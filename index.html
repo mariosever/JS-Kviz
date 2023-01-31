@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Kviz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="skripta.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h5>development by 3.B, 2023. </h5>
+
+    <h1>Dobrodošli na KVIZ!</h1>
+
+    <form id="kviz" name="kviz">
+
+        <p>1. Koji HTML element koristimo za linkove?</p>
+        <input type="text" id="textbox" name="pitanje1">
+
+        <p>2. HTML je programski jezik?</p>
+        <input type="radio" name="pitanje2" id="radio" value="true"> Točno <br>
+        <input type="radio" name="pitanje2" id="radio" value="false"> Netočno <br>
+
+        <p>3. Koji HTML element definira naslov web stranice?</p>
+        <input type="radio" name="pitanje3" id="radio" value="a"> head <br>
+        <input type="radio" name="pitanje3" id="radio" value="b"> title <br>
+        <input type="radio" name="pitanje3" id="radio" value="c"> meta <br>
+        <input type="radio" name="pitanje3" id="radio" value="d"> body <br>
+
+        <br>
+
+        <input type="button" value="Završi kviz!" id="button" onclick="provjeri();">
+
+    </form>
+
+    <div class="rezultat">
+        <p id="bodovi"></p>
+        <p id="poruka"></p>
+        <img src="" id="slika">
+    </div>
+
+</div>
+    
+</body>
+</html>
